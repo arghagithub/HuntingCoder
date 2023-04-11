@@ -20,7 +20,8 @@ export default function Home() {
       </Head>
       {/* <Script src="/sc.js" strategy="lazyOnload"></Script> */}
       <nav className={styles.mainnav}>
-        <ul className={`${styles1.cont} ${styles2.cont}`}>
+        {/* <ul className={`${styles1.cont} ${styles2.cont}`}> */}
+        <ul>
           <Link href="/">
             {" "}
             <li>Home</li>
