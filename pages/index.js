@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import styles1 from "@/styles/Home1.module.css";
+import styles2 from "@/styles/Home2.module.css";
 import Link from "next/link";
 import Script from "next/script";
 
@@ -18,7 +20,7 @@ export default function Home() {
       </Head>
       {/* <Script src="/sc.js" strategy="lazyOnload"></Script> */}
       <nav className={styles.mainnav}>
-        <ul>
+        <ul className={`${styles1.cont} ${styles2.cont}`}>
           <Link href="/">
             {" "}
             <li>Home</li>
