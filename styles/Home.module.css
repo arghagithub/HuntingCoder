@@ -1,14 +1,14 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 6rem;
+  padding: 4rem;
   min-height: 100vh;
 }
 
 .title {
-  margin: 0;
+  margin: 0 0 2rem 0;
   line-height: 1.15;
   font-size: 1.5rem;
 }
@@ -22,6 +22,7 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+  margin-bottom: 4rem;
 }
 
 .description a {
@@ -33,7 +34,7 @@
 
 .description p {
   position: relative;
-  margin: 0;
+  margin: 2rem 0 1rem 0;
   padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
@@ -52,6 +53,17 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 0 0 6rem;
+}
+
+.blogitem h3{
+  padding: 0.5rem 0;
+}
+.blogitem p{
+  padding: 0.5rem 0;
+}
+.blogs h2{
+  padding: 1rem 0;
+  text-align: center;
 }
 
 @media screen and (min-width:200px) and (max-width:700px) {
@@ -129,6 +141,16 @@
 
 .logo {
   position: relative;
+}
+
+.mainnav ul{
+  display: flex;
+  justify-content: center;
+}
+.mainnav ul li{
+  font-weight: bold;
+  list-style: none;
+  margin: 20px 24px;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
