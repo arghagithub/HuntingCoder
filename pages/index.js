@@ -2,11 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import styles1 from "@/styles/Home1.module.css";
-import styles2 from "@/styles/Home2.module.css";
 import Link from "next/link";
 import Script from "next/script";
-import Fake from "@/components/Fake";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +38,6 @@ export default function Home() {
           </Link>
         </ul>
       </nav>
-      <Fake/>
       <main className={styles.main}>
         <div className={styles.title}>
           {/* <Image
@@ -54,6 +50,8 @@ export default function Home() {
           /> */}
           <h1>Hunting coder</h1>
         </div>
+
+        <Image src="/coder.avif" className={styles.myimg} alt="" height={200} width={300} />
 
         <div className={styles.description}>
           <p>

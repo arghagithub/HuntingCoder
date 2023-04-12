@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 4rem;
+  padding: 2rem;
   min-height: 100vh;
 }
 
@@ -22,7 +22,7 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .description a {
@@ -34,7 +34,7 @@
 
 .description p {
   position: relative;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 0 0;
   padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
@@ -58,14 +58,18 @@
 .blogitem h3{
   padding: 0.5rem 0;
   text-align:center;
+  font-size: 1.5rem;
+
 }
 .blogitem p{
   padding: 0.5rem 0;
   text-align:center;
+  font-size: 1rem;
 }
 .blogs h2{
   padding: 1rem 0;
   text-align: center;
+  font-size: 2rem;
 }
 
 @media screen and (min-width:200px) and (max-width:700px) {
@@ -152,7 +156,7 @@
 .mainnav ul li{
   font-weight: bold;
   list-style: none;
-  margin: 20px 24px;
+  margin: 20px 24px 5px 24px;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -273,4 +277,10 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+
+.myimg{
+  border-radius: 20px;
+  border: 2px solid black;
 }
