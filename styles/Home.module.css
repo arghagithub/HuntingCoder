@@ -57,9 +57,11 @@
 
 .blogitem h3{
   padding: 0.5rem 0;
+  text-align:center;
 }
 .blogitem p{
   padding: 0.5rem 0;
+  text-align:center;
 }
 .blogs h2{
   padding: 1rem 0;

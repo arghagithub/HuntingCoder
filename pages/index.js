@@ -6,6 +6,7 @@ import styles1 from "@/styles/Home1.module.css";
 import styles2 from "@/styles/Home2.module.css";
 import Link from "next/link";
 import Script from "next/script";
+import Fake from "@/components/Fake";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function Home() {
       {/* <Script src="/sc.js" strategy="lazyOnload"></Script> */}
       <nav className={styles.mainnav}>
         {/* <ul className={`${styles1.cont} ${styles2.cont}`}> */}
-        <ul>
+        <ul className="fake">
           <Link href="/">
             {" "}
             <li>Home</li>
@@ -40,6 +41,7 @@ export default function Home() {
           </Link>
         </ul>
       </nav>
+      <Fake/>
       <main className={styles.main}>
         <div className={styles.title}>
           {/* <Image
