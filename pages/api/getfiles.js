@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-// It is just for creating and endpoint like a api
+// It is just for creating and endpoint like a api 
 const directoryPath = "blogdata";
 
 export default async function handler(req, res) {

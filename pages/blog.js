@@ -28,7 +28,7 @@ const blog = () => {
                   <h3>{blogitem.title}</h3>
                 </Link>
                 <p>
-                  {blogitem.content}
+                  {blogitem.content.substr(0,250)+"   ..."}
                 </p>
               </div>
             );
