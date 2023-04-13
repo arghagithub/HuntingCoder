@@ -16,7 +16,7 @@ const Blog = (props) => {
           {blogs.map((blogitem, index) => {
             return (
               <div className={styles.blogitem} key={index}>
-                <Link href={`/blogpost/${blogitem.slug}`}>
+                <Link className={styles.link} href={`/blogpost/${blogitem.slug}`}>
                   <h3>{blogitem.title}</h3>
                 </Link>
                 <p>{(blogitem.metadesc)? (blogitem.metadesc):(blogitem.content.substr(0,140)) + "   ..."}</p>
