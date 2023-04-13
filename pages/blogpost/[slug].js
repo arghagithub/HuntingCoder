@@ -3,6 +3,9 @@ import { useRouter } from "next/router";
 import styles from "@/styles/Home.module.css";
 const fs = require("fs");
 const Slug = (props) => {
+  function createMarkup(content) {
+    return { __html: content };
+  }
   //task 1: find the file corressponding to slug
   //task 2: populate them inside the page
   // http://localhost:3000/api/getblog?slug=how_to_learn_flask
@@ -20,7 +23,12 @@ const Slug = (props) => {
         <h1>{blog && blog.title}</h1>
         <hr />
         <hr />
-        <div style={{ padding: "1rem" }}>{blog && blog.content}</div>
+        <div style={{ padding: "1rem" }}>
+
+          {
+            blog && <div dangerouslySetInnerHTML={createMarkup(blog.content)} />
+          }
+        </div>
       </main>
     </div>
   );
