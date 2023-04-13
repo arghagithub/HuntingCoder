@@ -42,20 +42,20 @@ const contact = () => {
         <form onSubmit={handlesubmit}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name :</label>
-            <input type="text" className="form-control" id="name" name='name' onChange={handlechange} value={credentials.name} />
+            <input required  type="text" className="form-control" id="name" name='name' onChange={handlechange} value={credentials.name} />
           </div>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email address :</label>
-            <input type="email" className="form-control" id="email" name='email' onChange={handlechange} value={credentials.email} />
+            <input required type="email" className="form-control" id="email" name='email' onChange={handlechange} value={credentials.email} />
           </div>
           <div className="mb-3">
             <label htmlFor="phone" className="form-label">Phone :</label>
-            <input type="text" className="form-control" id="phone" name='phone' onChange={handlechange} value={credentials.phone} />
+            <input required type="text" className="form-control" id="phone" name='phone' onChange={handlechange} value={credentials.phone} />
           </div>
           <div className="mb-3">
             <label htmlFor="desc" className="form-label">Description :</label>
             <div className="form-floating">
-              <textarea className="form-control" placeholder="Leave a comment here" id="desc" name='desc' onChange={handlechange} value={credentials.desc} />
+              <textarea required className="form-control" placeholder="Leave a comment here" id="desc" name='desc' onChange={handlechange} value={credentials.desc} />
               <label htmlFor="floatingTextarea">Description</label>
             </div>
           </div>

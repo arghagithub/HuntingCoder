@@ -12,14 +12,18 @@ const Blog = (props) => {
     <div className={styles.container}>
       <main className={styles.main}>
         <div className={styles.blogs}>
-          <h2>Popular Blogs</h2>
           {blogs.map((blogitem, index) => {
             return (
               <div className={styles.blogitem} key={index}>
                 <Link className={styles.link} href={`/blogpost/${blogitem.slug}`}>
                   <h3>{blogitem.title}</h3>
                 </Link>
-                <p>{(blogitem.metadesc)? (blogitem.metadesc):(blogitem.content.substr(0,140)) + "   ..."}</p>
+                <p>{(blogitem.metadesc) ? (blogitem.metadesc) : (blogitem.content.substr(0, 140)) + "   ..."}</p>
+                <Link className={styles.link} href={`/blogpost/${blogitem.slug}`}>
+                  <div className="d-flex justify-content-center my-2">
+                    <button type="button" class="btn btn-dark">Read more</button>
+                  </div>
+                </Link>
               </div>
             );
           })}

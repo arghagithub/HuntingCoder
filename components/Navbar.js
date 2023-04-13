@@ -13,7 +13,7 @@ const Navbar = () => {
           {" "}<li>About</li>
         </Link>
         <Link className={styles.link} href="/blog">
-          {" "}<li>Blog</li>
+          {" "}<li>Blogs</li>
         </Link>
         <Link className={styles.link} href="/contact">
           {" "}<li>Contact</li>

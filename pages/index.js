@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.title}>
-          <h1>Hunting coder</h1>
+          <h2>&lt;Hunting coder/&gt;</h2>
         </div>
 
         <img
@@ -29,25 +29,7 @@ export default function Home() {
         <div className={styles.description}>
           <p>
             A blog for a hunting coder for a hunting coder&nbsp;
-            {/* <code className={styles.code}>pages/index.js</code> */}
           </p>
-          {/* <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{" "}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div> */}
         </div>
 
         <div className={styles.blogs}>
