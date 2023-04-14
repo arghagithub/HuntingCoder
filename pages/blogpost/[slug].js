@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "@/styles/Home.module.css";
 const fs = require("fs");
+const directoryPath='blogdata';
 const Slug = (props) => {
   function createMarkup(content) {
     return { __html: content };
@@ -35,12 +36,12 @@ const Slug = (props) => {
 };
 
 export async function getStaticPaths() {
+  let data = await fs.promises.readdir(directoryPath);
+  data=data.map((file)=>{
+    return { params: { slug: file.split(".")[0] } }
+  })
   return {
-    paths: [
-      { params: { slug: "how_to_learn_flask" } },
-      { params: { slug: "how_to_learn_javascript" } },
-      { params: { slug: "how_to_learn_nextjs" } },
-    ],
+    paths: data,
     fallback: false, // can also be true or 'blocking'
   };
 }
