@@ -18,10 +18,10 @@ const contact = () => {
 
         const result = await response.json();
         console.log("Success:", result);
-        // showalert("Thanks for submitting the form","success");
+        showalert("Thanks for submitting the form","success");
       } catch (error) {
         console.error("Error:", error);
-        // showalert("Sorry, internal server error","danger");
+        showalert("Sorry, internal server error","danger");
       }
     }
 

@@ -9,10 +9,10 @@ const directoryPath = "blogdata";
 // task 2: ierate throgh them and display them
 const Blog = (props) => {
   const [blogs, setBlogs] = useState(props.allblogs);
-  const [count,setCount]=useState(5);
+  const [count,setCount]=useState(2);
   const fetchMoreData = async () => {
-    let d= await fetch(`http://localhost:3000/api/getfiles/?count=${count+5}`);
-    setCount(count+5);
+    let d= await fetch(`http://localhost:3000/api/getfiles/?count=${count+2}`);
+    setCount(count+2);
     let data=await d.json();
     setBlogs(data);
   };
@@ -60,7 +60,7 @@ export async function getStaticProps(context) {
   let allcount=data.length;
   let myfile,
     allblogs = [];
-  for (let index = 0; index < 5; index++) {
+  for (let index = 0; index < 2; index++) {
     const file = data[index];
     myfile = await fs.promises.readFile(`blogdata/${file}`, "utf-8");
     allblogs.push(JSON.parse(myfile));

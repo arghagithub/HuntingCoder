@@ -1,4 +1,4 @@
-.container{
+.container {
   padding: 0 2rem;
 }
 .main {
@@ -59,7 +59,7 @@
   margin: 0 0 0 6rem;
 }
 
-@media screen and (min-width:200px) and (max-width:700px) {
+@media screen and (min-width: 200px) and (max-width: 700px) {
   .grid {
     margin: 0rem;
   }
@@ -136,14 +136,16 @@
   position: relative;
 }
 
-.mainnav ul{
+.mainnav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.mainnav ul li{
+.mainnav ul li {
   font-weight: bold;
   list-style: none;
-  margin: 20px 24px 5px 24px;
+  margin: 20px 30px 5px 10px;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -241,10 +243,25 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 200px) and (max-width: 500px) {
+@media (min-width: 100px) and (max-width: 500px) {
   .description p {
     padding: 1rem;
     font-weight: bold;
+  }
+  .title {
+    font-size: 1rem;
+  }
+
+  .myimg {
+    height: 120px;
+    width: 220px;
+  }
+  .mainnav ul li {
+    margin: 10px 5px;
+  }
+  .content{
+    max-width: 150vw;
+    padding: 0.1rem;
   }
 }
 @media (min-width: 701px) and (max-width: 1120px) {
@@ -272,8 +289,6 @@
   }
 }
 
-
-
 /*for blog item*/
 
 .blogitem h3 {
@@ -293,13 +308,12 @@
   font-size: 2rem;
 }
 
-
-.myimg{
+.myimg {
   border-radius: 20px;
   border: 2px solid black;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: black;
 }

@@ -20,10 +20,10 @@ const Slug = (props) => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1>{blog && blog.title}</h1>
+        <h1 className="text-center" >{blog && blog.title}</h1>
         <hr />
         <hr />
-        <div style={{ padding: "1rem" }}>
+        <div className={styles.content}>
 
           {
             blog && <div dangerouslySetInnerHTML={createMarkup(blog.content)} />
