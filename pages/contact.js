@@ -59,7 +59,7 @@ const contact = () => {
               <label htmlFor="floatingTextarea">Description</label>
             </div>
           </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-dark">Submit</button>
         </form>
       </div>
     </>
